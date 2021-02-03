@@ -13,6 +13,9 @@ print("-------------------")
 
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors'")
 
+#data validation
+
+
 print("You chose:", user_choice)
 
 
@@ -29,20 +32,29 @@ print("-------------------")
 # determining who won
 
 
-if user_choice == computer_choice:
-        print("It's tie!")
-   elif user_choice == "paper" and computer_choice == "rock":
-        print("You win! Congrats")
-    elif user_choice == "paper" and computer_choice == "scissors":
-        print("Oh! The computer won, that's ok!")
-    elif user_choice == "rock" and computer_choice == "paper":
-        print("Oh! The computer won, that's ok!")
-    elif user_choice == "rock" and computer_choice == "scissors":
-        print("You win! Congrats")
-    elif user_choice == "scissors" and computer_choice == "paper":
-        print("You win! Congrats")
-    elif user_choice == "scissors" and computer_choice == "rock":
-        print("Oh! The computer won, that's ok!")
+if user_choice == "rock":
+    if computer_choice == "rock":
+        print("Oh, it's a tie.")
+    elif computer_choice == "paper":
+        print("Oh, the computer won. It's ok.")
+    elif computer_choice == "scissors":
+        print("Oh, you won! Nice job.")
+elif user_choice == "paper":
+    if computer_choice == "rock":
+        print("Oh, you won! Nice job.")
+    elif computer_choice == "paper":
+        print("Oh, it's a tie.")
+    elif computer_choice == "scissors":
+        print("Oh, the computer won. It's ok.")
+elif user_choice == "scissors":
+    if computer_choice == "rock":
+        print("Oh, the computer won. It's ok.")
+    elif computer_choice == "paper":
+        print("Oh, you won! Nice job.")
+    elif computer_choice == "scissors":
+        print("Oh, it's a tie.")
+else:
+    print("OOPS SOMETHING WENT WRONG.")
 
 print("-------------------")
 

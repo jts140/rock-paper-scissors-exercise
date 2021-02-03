@@ -14,10 +14,10 @@ print("-------------------")
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors'")
 
 #data validation
-
-
+if user_choice == "rock":
 print("You chose:", user_choice)
-
+elif user_choice == "paper"
+elif user_choice == "scissors"
 
 
 #simulating a computer input

@@ -1,11 +1,25 @@
 # game.py
+import os
 import random
+
+from dotenv import load_dotenv # see: https://github.com/theskumar/python-dotenv
+
+#from app.my_mod import to_usd
+
+#
+# 2) After that, we generally run any setup code, like setting environment vars:
+#
+
+load_dotenv() # invokes / uses the function we got from the third-party package. this one happens to read env vars from the ".env" file. see the package docs for more info
+
+USER_NAME = os.getenv("USER_NAME", default="Player One") # uses the os module to read the specified environment variable and store it in a corresponding python variable
 
 print("Rock, Paper, Scissors, Shoot!")
 
 print("-------------------")
 
-print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
+print(f"PLAYER: '{USER_NAME}'")
+print(f"Welcome '{USER_NAME} to my Rock-Paper-Scissors game...")
 
 #asking user inputs
 print("-------------------")

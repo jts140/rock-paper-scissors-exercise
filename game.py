@@ -8,30 +8,25 @@ print("-------------------")
 print("Welcome 'Player One' to my Rock-Paper-Scissors game...")
 
 #asking user inputs
-
 print("-------------------")
 
 user_choice = input("Please choose either 'rock', 'paper', or 'scissors'")
-
-#data validation
-if user_choice == "rock":
 print("You chose:", user_choice)
-elif user_choice == "paper"
-elif user_choice == "scissors"
 
+# data validation for User
+foo = ["rock","paper", "scissors"]
+if user_choice  not in foo:
+    print("Please chose a vaild option (rock, paper, or scissors) and run the program again")
+    exit()
 
 #simulating a computer input
-foo = ["rock","paper", "scissors"]
 computer_choice = random.choice(foo)
 
 print("The computer chose:", computer_choice)
 
-
 print("-------------------")
 
-# determining who won
-
-
+# determining who won (modified from Slack)
 if user_choice == "rock":
     if computer_choice == "rock":
         print("Oh, it's a tie.")

@@ -18,8 +18,8 @@ print("Rock, Paper, Scissors, Shoot!")
 
 print("-------------------")
 
-print(f"PLAYER: '{USER_NAME}'")
-print(f"Welcome '{USER_NAME} to my Rock-Paper-Scissors game...")
+
+print(f"Welcome '{USER_NAME}' to my Rock-Paper-Scissors game...")
 
 #asking user inputs
 print("-------------------")

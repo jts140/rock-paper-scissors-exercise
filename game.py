@@ -2,6 +2,7 @@
 import os
 import random
 
+#modified from my first python app
 from dotenv import load_dotenv # see: https://github.com/theskumar/python-dotenv
 
 #from app.my_mod import to_usd
